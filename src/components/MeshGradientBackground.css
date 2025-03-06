@@ -1,0 +1,30 @@
+.mesh-gradient-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: hsla(0,0%,100%,1);
+    background-image: 
+        radial-gradient(at 17% 27%, hsla(334,100%,69%,1) 0px, transparent 50%),
+        radial-gradient(at 37% 89%, hsla(329,100%,82%,1) 0px, transparent 50%),
+        radial-gradient(at 85% 54%, hsla(329,100%,93%,1) 0px, transparent 50%);
+    background-size: 100% 100%;
+    filter: blur(80px);
+    animation: moveBackground 8s infinite alternate ease-in-out;
+}
+
+@keyframes moveBackground {
+    0% { background-size: 100% 100%; }
+    10% { background-size: 120% 80%; }
+    20% { background-size: 190% 140%; }
+    30% { background-size: 130% 110%; }
+    40% { background-size: 150% 120%; }
+    50% { background-size: 180% 100%; }
+    60% { background-size: 220% 80%; }
+    70% { background-size: 100% 50%; }
+    80% { background-size: 120% 70%; }
+    90% { background-size: 110% 90%; }
+    100% { background-size: 100% 100%; }
+}
