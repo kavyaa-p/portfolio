@@ -117,10 +117,9 @@ const Home = () => {
                     <ProjectCard
                         projectTitle={'Portfolio Website'}
                         tools={'ReactJS'}
-                        projectDescription={'Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
-                                    Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
-                                    Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
-                                    Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description'}
+                        projectDescription={'The portfolio website is a personal project built with React to showcase my work, experience, and skills. It features custom \
+                            styling, smooth navigation, and project highlights. Still a work in progress, the site will undergo further improvements, including responsiveness \
+                            and additional features to enhance usability and design.'}
                         imgURL={'/images/PortfolioWebsite.png'}
                         githubURL={'https://github.com/kavyaa-p/portfolio'}
                         buttonName={'Github Repository'}
