@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import MeshGradientBackground from '../components/MeshGradientBackground';
 import ProjectCard from '../components/ProjectCard';
 import './Home.css';
+import NavButton from '../components/NavButton';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -53,7 +54,7 @@ const Home = () => {
                             and discover my passion for designing and implementing intuitive user experiences and interfaces.
                         </p>
                     </div>
-                    <button className='custom-button' onClick={() => navigate('/about')}>Learn More</button>
+                    <NavButton to="/about">Learn More</NavButton>
                 </div>
             </div>
 
@@ -71,7 +72,8 @@ const Home = () => {
                             Built with Django, React, and OpenAI’s Realtime API, it leverages WebRTC for real-time voice communication without traditional \
                             speech-to-text or text-to-speech APIs. This project enables controlled studies on how different ratios of episodic and semantic \
                             memory details influence perceived credibility in simulated medical scenarios.'}
-                        imgURL={'https://via.placeholder.com/300'}
+                        imgURL={'/images/kavya.png'}
+                        buttonName={'Private Github Repository'}
                     />
 
                     <ProjectCard
@@ -81,7 +83,9 @@ const Home = () => {
                             Built with Python, FastAPI, React, and ChromaDB, it leverages NLP techniques for efficient semantic search and retrieval. The system \
                             integrates OpenAI’s GPT-4o-mini model to generate precise, context-aware responses while utilizing LangChain to enhance document chunking \
                             and retrieval accuracy for optimized performance.'}
-                        imgURL={'https://via.placeholder.com/300'}
+                        imgURL={'/images/kavya.png'}
+                        githubURL={'https://github.com/kavyaa-p/ScholarBot'}
+                        buttonName={'Github Repository'}
                     />
 
                     <ProjectCard
@@ -89,7 +93,9 @@ const Home = () => {
                         projectDescription={'PetrDrops is a social platform for UCI students to track and share mascot sticker drops. Built with React and Supabase, \
                             it includes secure login, real-time updates, and features like comments, upvotes, and filters. Users can upload images or share links, \
                             all within a clean, responsive design.  Currently paused, the project remains a work in progress with room for further polishing and enhancements.'}
-                        imgURL={'https://via.placeholder.com/300'}
+                        imgURL={'/images/kavya.png'}
+                        githubURL={'https://github.com/kavyaa-p/PetrDrops'}
+                        buttonName={'Github Repository'}
                     />
 
                     <ProjectCard
@@ -98,7 +104,9 @@ const Home = () => {
                                     Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
                                     Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
                                     Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description'}
-                        imgURL={'https://via.placeholder.com/300'}
+                        imgURL={'/images/kavya.png'}
+                        githubURL={'https://github.com/kavyaa-p/portfolio'}
+                        buttonName={'Github Repository'}
                     />
 
                     <ProjectCard
@@ -107,25 +115,27 @@ const Home = () => {
                                     Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
                                     Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
                                     Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description'}
-                        imgURL={'https://via.placeholder.com/300'}
+                        imgURL={'/images/kavya.png'}
+                        buttonName={'Case Study'}
                     />
 
                     <ProjectCard
                         projectTitle={'Pantry Pal'}
-                        projectDescription={'Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
-                                    Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
-                                    Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
-                                    Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description'}
-                        imgURL={'https://via.placeholder.com/300'}
+                        projectDescription={'Pantry Pal is a meal-planning platform designed to help users organize their meals, discover personalized recipes \
+                            based on the ingredients they have on hand, and create customized shopping lists. PantryPal aims to simplify meal prep and grocery \
+                            management, offering a flexible, intuitive solution for home cooks.'}
+                        imgURL={'/images/kavya.png'}
+                        buttonName={'Case Study'}
                     />
 
                     <ProjectCard
                         projectTitle={'Lumina'}
-                        projectDescription={'Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
-                                    Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
-                                    Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
-                                    Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description'}
-                        imgURL={'https://via.placeholder.com/300'}
+                        projectDescription={'Lumina, which means "brilliant light", is a platform that allows users to share their stories anonymously in the \
+                            form of storybooks, find others with shared experiences, and learn more about people from other parts of the world through their \
+                            published storybooks. Lumina intends to provide a safe space for people to share their experiences and encourage creativity and \
+                            intellectual curiosity.'}
+                        imgURL={'/images/kavya.png'}
+                        buttonName={'Case Study'}
                     />
 
                     <ProjectCard
@@ -134,7 +144,8 @@ const Home = () => {
                                     Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
                                     Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
                                     Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description'}
-                        imgURL={'https://via.placeholder.com/300'}
+                        imgURL={'/images/kavya.png'}
+                        buttonName={'Case Study'}
                     />
                 </div>
             </div>

@@ -1,7 +1,8 @@
 import React from 'react';
+import NavButton from '../components/NavButton';
 import './ProjectCard.css';
 
-const ProjectCard = ({ projectTitle, projectDescription, tools, imgURL }) => {
+const ProjectCard = ({ projectTitle, projectDescription, tools, imgURL, githubURL, buttonName }) => {
     return (
         <div className='project'>
             <div className='project-details'>
@@ -11,7 +12,8 @@ const ProjectCard = ({ projectTitle, projectDescription, tools, imgURL }) => {
                 </div>
                 <div className='project-description'>
                     <p>{projectDescription}</p>
-                </div>              
+                </div>
+                <NavButton to={githubURL || "#"}>{buttonName}</NavButton>            
             </div>
             <div className='project-image'>
                 <img src={imgURL} alt={`${projectTitle} Image`} />
