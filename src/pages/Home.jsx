@@ -18,10 +18,10 @@ const Home = () => {
                     <TypeAnimation
                         sequence={[
                             // Same substring at the start will only be typed out once, initially
-                            ' developer',
+                            'developer',
                             1000,
-                            'designer',
-                            1000
+                            '',
+                            1500
                         ]}
                         wrapper="span"
                         speed={200}
@@ -78,10 +78,10 @@ const Home = () => {
 
                     <ProjectCard
                         projectTitle={'ScholarBot'}
-                        tools={'Python • FastAPI • React • OpenAI GPT-4o API • ChromaDB • NLP'}
+                        tools={'Python • FastAPI • React • OpenAI API • ChromaDB • NLP'}
                         projectDescription={'ScholarBot is a RAG-based AI system designed to extract information from research papers and answer context-driven questions. \
                             Built with Python, FastAPI, React, and ChromaDB, it leverages NLP techniques for efficient semantic search and retrieval. The system \
-                            integrates OpenAI’s GPT-4o-mini model to generate precise, context-aware responses while utilizing LangChain to enhance document chunking \
+                            integrates OpenAI’s gpt-4o-mini model to generate precise, context-aware responses while utilizing LangChain to enhance document chunking \
                             and retrieval accuracy for optimized performance.'}
                         imgURL={'/images/kavya.png'}
                         githubURL={'https://github.com/kavyaa-p/ScholarBot'}
@@ -90,6 +90,7 @@ const Home = () => {
 
                     <ProjectCard
                         projectTitle={'PetrDrops'}
+                        tools={'ReactJS • JavaScript • Bootstrap • Supabase'}
                         projectDescription={'PetrDrops is a social platform for UCI students to track and share mascot sticker drops. Built with React and Supabase, \
                             it includes secure login, real-time updates, and features like comments, upvotes, and filters. Users can upload images or share links, \
                             all within a clean, responsive design.  Currently paused, the project remains a work in progress with room for further polishing and enhancements.'}
@@ -100,16 +101,17 @@ const Home = () => {
 
                     <ProjectCard
                         projectTitle={'Portfolio Website'}
+                        tools={'ReactJS'}
                         projectDescription={'Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
                                     Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
                                     Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
                                     Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description'}
-                        imgURL={'/images/kavya.png'}
+                        imgURL={'/images/PortfolioWebsite.png'}
                         githubURL={'https://github.com/kavyaa-p/portfolio'}
                         buttonName={'Github Repository'}
                     />
 
-                    <ProjectCard
+                    {/* <ProjectCard
                         projectTitle={'Reddit Redesign'}
                         projectDescription={'Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
                                     Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description\
@@ -146,7 +148,7 @@ const Home = () => {
                                     Project DescriptionProject DescriptionProject DescriptionProject DescriptionProject DescriptionProject Description'}
                         imgURL={'/images/kavya.png'}
                         buttonName={'Case Study'}
-                    />
+                    /> */}
                 </div>
             </div>
         </div>
