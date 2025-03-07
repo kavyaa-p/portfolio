@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <div className='navBar'>
             <div className='navLogo'>
-                <p>Kavya Pabbaraju</p>
+                <p>KP</p>
             </div>
             <div className='navLinks'>
                 <Link to="/">home</Link>

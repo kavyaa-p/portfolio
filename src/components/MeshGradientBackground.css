@@ -7,9 +7,9 @@
     z-index: -1;
     background-color: hsla(0,0%,100%,1);
     background-image: 
-        radial-gradient(at 17% 27%, hsla(334,100%,69%,1) 0px, transparent 50%),
-        radial-gradient(at 37% 89%, hsla(329,100%,82%,1) 0px, transparent 50%),
-        radial-gradient(at 85% 54%, hsla(329,100%,93%,1) 0px, transparent 50%);
+        radial-gradient(at 17% 27%, #ff61a5 0px, transparent 50%),
+        radial-gradient(at 37% 89%, #ffa3d3 0px, transparent 50%),
+        radial-gradient(at 85% 54%, #ffdbee 0px, transparent 50%);
     background-size: 100% 100%;
     filter: blur(80px);
     animation: moveBackground 8s infinite alternate ease-in-out;

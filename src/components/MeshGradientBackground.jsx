@@ -1,9 +1,9 @@
 import React from 'react';
-import './MeshGradientBackground.css'; // Make sure the CSS is imported
+import './MeshGradientBackground.css';
 
 function MeshGradientBackground() {
     return (
-        <div className="mesh-gradient-background"></div> // Use a class for styling
+        <div className="mesh-gradient-background"></div>
     );
 }
 
