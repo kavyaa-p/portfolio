@@ -1,4 +1,12 @@
+body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
 
+body::-webkit-scrollbar {
+    display: none;
+}
 
 h1,
 h2 {

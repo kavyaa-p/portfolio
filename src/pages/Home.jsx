@@ -1,5 +1,5 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import MeshGradientBackground from '../components/MeshGradientBackground';
 import ProjectCard from '../components/ProjectCard';
@@ -8,20 +8,35 @@ import NavButton from '../components/NavButton';
 
 const Home = () => {
     const navigate = useNavigate();
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash === "#projects") {
+            const section = document.getElementById("projects");
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+        else if (location.hash === "#home") {
+            const section = document.getElementById("home");
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, [location]);
 
     return (
         <div className="home-container">
-            <div className="home">
+            <div className="home" id='home'>
                 <MeshGradientBackground />
                 <h1>Kavya Pabbaraju</h1>
                 <p> <span style={{ marginRight: '5px' }}>A</span>
                     <TypeAnimation
                         sequence={[
-                            // Same substring at the start will only be typed out once, initially
                             'developer',
                             1000,
                             '',
-                            1500
+                            500
                         ]}
                         wrapper="span"
                         speed={200}
@@ -33,8 +48,8 @@ const Home = () => {
             </div>
 
             <div className="about-container">
-                <div className='about-img'> 
-                    <img src='/images/kavya.png' alt='A portrait picture of Kavya' /> 
+                <div className='about-img'>
+                    <img src='/images/kavya.png' alt='A portrait picture of Kavya' />
                 </div>
                 <div className='about-description-header'>
                     <div className='about-header'>

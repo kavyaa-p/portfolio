@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
 @font-face {
     font-family: 'Gambarino-Regular';
     src: url('assets/fonts/Gambarino_Complete/fonts/Gambarino-Regular.woff2') format('woff2'),
