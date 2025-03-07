@@ -38,7 +38,7 @@ const Navbar = () => {
                     <Link to="/#projects">work</Link>
                 )}
                 <Link to="/about">about</Link>
-                <Link to="https://drive.google.com/file/d/1HnxS2fhVc79XSHiB-DylOR7ZA4MFGDsv/view?usp=sharing">resume</Link>
+                <Link to="https://drive.google.com/file/d/1VBRihF3QrVCLGboC2EMWdE0MeigGY2-X/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</Link>
             </div>
         </div>
     );
