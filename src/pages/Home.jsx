@@ -58,15 +58,14 @@ const Home = () => {
                     </div>
                     <div className='about-description'>
                         <p>
-                            I’m currently a senior at the University of California, Irvine, studying Software Engineering.
+                            I’m currently a senior at the University of California, Irvine, studying Software Engineering, and I’m set to graduate in Fall 2025.
                         </p>
                         <p>
-                            Throughout my school years, I loved immersing myself in creative and intellectual activities—performing
-                            in singing and dance competitions, crafting origami, and participating in spelling bees, debates, and Olympiad exams.
+                            My passion for technology comes from a desire to make a positive impact on those around me. Over time, I’ve explored various areas of development,
+                            from frontend and backend to UX/UI design, and I’m currently diving into generative AI to build intelligent applications.
                         </p>
                         <p>
-                            These diverse experiences fueled my creativity and growth, eventually leading me to pursue a degree in Software Engineering
-                            and discover my passion for designing and implementing intuitive user experiences and interfaces.
+                            This constant curiosity and drive for learning push me to experiment with new technologies and apply them to projects that create meaningful change.
                         </p>
                     </div>
                     <NavButton to="/about">Learn More</NavButton>
