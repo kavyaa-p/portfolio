@@ -58,7 +58,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="projects-container">
+            <div className="projects-container" id='projects'>
                 <div className='projects-header'>
                     <h3>SELECTED WORK</h3>
                     <h1>Here Are Some Of My Projects 🪷</h1>
@@ -72,7 +72,7 @@ const Home = () => {
                             Built with Django, React, and OpenAI’s Realtime API, it leverages WebRTC for real-time voice communication without traditional \
                             speech-to-text or text-to-speech APIs. This project enables controlled studies on how different ratios of episodic and semantic \
                             memory details influence perceived credibility in simulated medical scenarios.'}
-                        imgURL={'/images/kavya.png'}
+                        imgURL={'https://via.placeholder.com/300'}
                         buttonName={'Private Github Repository'}
                     />
 
@@ -83,7 +83,7 @@ const Home = () => {
                             Built with Python, FastAPI, React, and ChromaDB, it leverages NLP techniques for efficient semantic search and retrieval. The system \
                             integrates OpenAI’s gpt-4o-mini model to generate precise, context-aware responses while utilizing LangChain to enhance document chunking \
                             and retrieval accuracy for optimized performance.'}
-                        imgURL={'/images/kavya.png'}
+                        imgURL={'https://via.placeholder.com/300'}
                         githubURL={'https://github.com/kavyaa-p/ScholarBot'}
                         buttonName={'Github Repository'}
                     />
@@ -94,7 +94,7 @@ const Home = () => {
                         projectDescription={'PetrDrops is a social platform for UCI students to track and share mascot sticker drops. Built with React and Supabase, \
                             it includes secure login, real-time updates, and features like comments, upvotes, and filters. Users can upload images or share links, \
                             all within a clean, responsive design.  Currently paused, the project remains a work in progress with room for further polishing and enhancements.'}
-                        imgURL={'/images/kavya.png'}
+                        imgURL={'https://via.placeholder.com/300'}
                         githubURL={'https://github.com/kavyaa-p/PetrDrops'}
                         buttonName={'Github Repository'}
                     />
