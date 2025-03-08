@@ -33,26 +33,42 @@
 }
 
 .about-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 52px; /* Matches Framer’s gap */
+    align-items: center; /* Aligns content vertically */
     justify-content: center;
-    align-items: stretch;
-    margin: 10% auto 0 auto;
-    padding: 0;
-    max-width: 50%;
-    min-height: 400px;
-    /* margin: 0 auto; */
-    gap: 52px;
+    max-width: 1350px; /* Prevents excessive widening */
+    width: 70%; /* Reduces width on larger screens */
+    margin: 15% auto 3% auto;
+}
+
+/* Image settings */
+.about-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%; /* 1fr equivalent in Framer */
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .about-description-header {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     flex-grow: 1;
     min-height: 100%;
+    gap: 25px;
+}
+
+.about-header {
+    gap: 0px;
 }
 
 .about-description {
@@ -106,4 +122,24 @@
     max-width: 50%;
     justify-content: center;
     gap: 50px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .about-container {
+        width: 85%; /* Expands slightly on medium screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .about-container {
+        grid-template-columns: 1fr; /* Stacks content vertically */
+        text-align: center;
+        width: 90%; /* Avoids excessive shrinking */
+    }
+
+    .about-img {
+        justify-content: center;
+    }
 }
