@@ -40,7 +40,7 @@ const Home = () => {
                         ]}
                         wrapper="span"
                         speed={200}
-                        style={{ fontSize: '22px', display: 'inline-block' }}
+                        style={{ fontSize: '1.375rem', display: 'inline-block' }}
                         repeat={Infinity}
                     />
                     <span style={{ marginLeft: '2px' }}>based in Irvine, CA</span>
@@ -62,7 +62,7 @@ const Home = () => {
                         </p>
                         <p>
                             My passion for technology comes from a desire to make a positive impact on those around me. Over time, I’ve explored various areas of development,
-                            from frontend and backend to UX/UI design, and I’m currently diving into generative AI to build intelligent applications.
+                            from frontend and backend to UX/UI design, and I’m currently diving into AI to build intelligent applications.
                         </p>
                         <p>
                             This constant curiosity and drive for learning push me to experiment with new technologies and apply them to projects that create meaningful change.
@@ -86,7 +86,7 @@ const Home = () => {
                             Built with Django, React, and OpenAI’s Realtime API, it leverages WebRTC for real-time voice communication without traditional \
                             speech-to-text or text-to-speech APIs. This project enables controlled studies on how different ratios of episodic and semantic \
                             memory details influence perceived credibility in simulated medical scenarios.'}
-                        imgURL={'https://via.placeholder.com/300'}
+                        imgURL={'./images/ai-detail-study.png'}
                         buttonName={'Private Github Repository'}
                     />
 

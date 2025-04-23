@@ -14,7 +14,8 @@
 
 .navBar .navLogo {
     margin-left: 20px;
-    font-size: 22px;
+    /* font-size: 22px; */
+    font-size: 1.375rem; /* 22px */
 }
 
 .navBar .navLogo p {
@@ -35,10 +36,77 @@
     text-decoration: none;
     letter-spacing: 1.2px;
     color: #454545;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1rem;     /* 16px */
     font-family: 'Switzer-Regular', sans-serif;
 }
 
 .navBar .navLinks a:hover {
     color: #FF66A6;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    p, a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+
+    p, a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 10px;
+    }
+
+    p, a {
+        font-size: 12px;
+    }
 }

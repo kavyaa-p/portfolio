@@ -22,25 +22,17 @@ const Navbar = () => {
     }
 
     return (
-        <div className='navBar'>
+        <nav className='navBar'>
             <div className='navLogo'>
                 <p>KP</p>
             </div>
             <div className='navLinks'>
-                {location.pathname === "/" ? (
-                    <a href="#home" onClick={scrollToHome}>home</a>
-                ) : (
-                    <Link to="/">home</Link>
-                )}
-                {location.pathname === "/" ? (
-                    <a href="#projects" onClick={scrollToProjects}>work</a>
-                ) : (
-                    <Link to="/#projects">work</Link>
-                )}
+                {location.pathname === "/" ? (<a href="#home" onClick={scrollToHome}>home</a>) : (<Link to="/">home</Link>)}
+                {location.pathname === "/" ? (<a href="#projects" onClick={scrollToProjects}>work</a>) : (<Link to="/#projects">work</Link>)}
                 <Link to="/about">about</Link>
                 <Link to="https://drive.google.com/file/d/1VBRihF3QrVCLGboC2EMWdE0MeigGY2-X/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</Link>
             </div>
-        </div>
+        </nav>
     );
 };
 

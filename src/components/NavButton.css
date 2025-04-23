@@ -2,7 +2,8 @@
     width: fit-content;
     background-color: black;
     color: #FFE6F0;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1rem;     /* 16px */
     font-weight: 500;
     border: none;
     padding: 16px 32px;
