@@ -81,7 +81,7 @@ const Home = () => {
                 <div className='projects-cards'>
                     <ProjectCard
                         projectTitle={'AI Detail Study'}
-                        tools={'Python • Django • React • OpenAI Realtime API • WebRTC • AWS'}
+                        tools={'Python • Django • React • OpenAI Realtime API • WebRTC'}
                         projectDescription={'An AI-powered, audio-only chatbot designed to simulate patient-provider interactions for research on memory believability.\
                             Built with Django, React, and OpenAI’s Realtime API, it leverages WebRTC for real-time voice communication without traditional \
                             speech-to-text or text-to-speech APIs. This project enables controlled studies on how different ratios of episodic and semantic \
